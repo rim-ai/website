@@ -1,0 +1,7 @@
+.underline-custom {
+    text-decoration: underline;
+    text-decoration-color: #ffd900;
+    /* Change the color to your desired one */
+    text-decoration-thickness: 8px;
+    /* Change the thickness to your desired one */
+}

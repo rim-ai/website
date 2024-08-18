@@ -1,0 +1,116 @@
+<div class="max-w-4xl mx-auto p-8">
+
+
+  <div class="w-full p-4">
+    <section class="bg-white py-4">
+      <div class="container mx-auto">
+        <div class="p-6 bg-white rounded-md shadow">
+
+          <h1 class="text-4xl font-bold text-blue-600 text-center underline-custom">Format & Conditions</h1>
+          <ul class="list-disc list-inside ml-4">
+            <br>
+            <li class="mt-1">Prepare your ID and email.</li>
+            <li class="mt-1">Prepare your zip file, which should contain only images as described below:</li>
+            <ul class="list-decimal list-inside ml-4">
+              <li class="mt-1">Web-scraped images: name these images in the format
+                "<strong>web1_<code>image_name</code>.[jpeg, png, gif]</strong>" (60%).</li>
+              <li class="mt-1">Photos taken by your camera: name these images in the format
+                "<strong>cam1_<code>image_name</code>.[jpeg, png, gif]</strong>" (40%).</li>
+            </ul>
+            <li class="mt-1">Each submission should not exceed 2GB.</li>
+            <li class="mt-1">You are allowed an unlimited number of submissions</li>
+            <br>
+          </ul>
+
+          <h1 class="text-4xl font-bold text-blue-600 text-center underline-custom">Submission</h1>
+
+          <div class="flex flex-wrap mb-3">
+            <div class="w-full md:w-full p-3">
+              <div class="p-6 h-full overflow-hidden bg-white rounded-md">
+                <div class="flex flex-wrap pb-3 -m-3">
+                  <div class="w-full md:w-full p-3">
+                    <p class="mb-1.5 font-medium text-base text-coolGray-800">Enter your email and group ID to verify:
+                    </p>
+                    <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" type="email"
+                      [(ngModel)]="userEmail" (change)="checkSubmissionCount()" placeholder="Enter your email">
+                    <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" type="text"
+                      [(ngModel)]="userGroupId" (change)="checkSubmissionCount()"
+                      placeholder="The NNI of first member of your group, given during the registration">
+
+                    <p *ngIf="submissionMessage" [ngClass]="submissionMessageClass" class="mt-2">{{ submissionMessage }}
+                    </p>
+                    <small>
+                      If any error persists or you encounter a problem, please use this form to <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdlxHdmqRQi-dRIaWZea0mvh5WfrSFYZr8xjquS4rMW0EWZSA/viewform"
+                        style="color: blue;" target="_blank">report it</a>.
+                    </small>
+
+
+                  </div>
+                </div>
+                <div class="py-3"></div>
+                <div class="flex flex-wrap -m-3">
+                  <div class="w-full p-3">
+                    <p class="mb-1.5 font-medium text-coolGray-800 text-base">Upload your zip file</p>
+                    <div
+                      class="relative flex flex-col items-center justify-center mb-6 p-6 h-44 text-center text-green-500 focus-within:border-green-500 border border-dashed border-coolGray-200 rounded-lg"
+                      [class.disabled]="!canUpload">
+                      <input class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer" type="file"
+                        (change)="onFileSelected($event)" [disabled]="!canUpload" accept=".zip">
+                      <p class="mb-1 text-sm text-coolGray-800 font-medium">
+                        <span class="text-green-500">Click to upload a file</span>
+                        <span> or drag and drop</span>
+                      </p>
+                      <p class="text-xs text-coolGray-500 font-medium">ZIP up to 1GB</p>
+                      <p *ngIf="selectedFile" class="text-sm font-medium">{{ selectedFile.name }}</p>
+                      <div *ngIf="uploadProgress != null" class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div
+                          class="bg-green-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                          [style.width]="uploadProgress + '%'">{{ uploadProgress }}%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-4 space-x-4">
+            <button *ngIf="selectedFile && uploadProgress == null" [disabled]="uploadInProgress" (click)="uploadFile()"
+              class="bg-green-500 text-white font-medium py-2 px-4 rounded">Upload File</button>
+            <button *ngIf="selectedFile" (click)="resetUpload()"
+              class="bg-red-500 text-white font-medium py-2 px-4 rounded">Reset</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+
+  <h1 class="text-4xl font-bold text-blue-600 text-center underline-custom">Leaderboard</h1>
+  <p class="text-center my-4">Here are the final scores for Phase 1, ranked in order from highest to lowest.</p>
+  <section class="py-8">
+    <div class="container px-4 mx-auto">
+      <div class="p-4 mb-6 bg-white shadow rounded overflow-x-auto">
+        <div class="max-h-64 overflow-y-auto">
+          <table class="table-auto w-full">
+            <thead>
+              <tr class="text-xs text-gray-500 text-left">
+                <th class="pb-3 font-medium">Email</th>
+                <th class="pb-3 font-medium">Best Score </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-xs bg-gray-50" *ngFor="let entry of entries">
+                <td class="py-5 px-2 font-medium">{{ entry.GID }}</td>
+                <td class="py-5 px-2 font-medium">{{ entry.SCORE_FINALE }}</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>

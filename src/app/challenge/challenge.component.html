@@ -1,0 +1,194 @@
+<div class="max-w-4xl mx-auto p-8">
+  <h1 class="text-4xl font-bold text-blue-600 text-center">MAURITANIAN LICENSE PLATE RECOGNITION CHALLENGE 2024</h1>
+
+
+  <div class="w-full p-4">
+    <section class="bg-white py-4">
+      <div class="container mx-auto">
+        <div class="p-6 bg-white rounded-md shadow">
+          <h1 class="text-4xl font-bold text-blue-600 text-center underline-custom">Registration</h1>
+          <p class="text-center my-4">Registration is mandatory to participate.</p>
+
+
+          <form *ngIf="!reviewMode">
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+              <input type="email" id="email" [(ngModel)]="registrationData.email" name="email" required
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
+            </div>
+
+
+            <div class="mt-4">
+              <label for="option" class="block text-sm font-medium text-gray-700">Registration Option</label>
+              <select id="option" [(ngModel)]="registrationData.option" name="option" (change)="onOptionChange()"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
+                <option value="individual">Individual</option>
+                <option value="team">Team</option>
+              </select>
+            </div>
+            <div class="mt-4">
+              <label for="pseudoName" class="block text-sm font-medium text-gray-700">Pseudo Name / Team Name</label>
+              <input type="text" id="pseudoName" [(ngModel)]="registrationData.pseudoName" name="pseudoName" required
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
+            </div>
+
+            <div *ngIf="registrationData.option === 'team'" class="mt-4">
+              <label for="team-size" class="block text-sm font-medium text-gray-700">Number of Members (up to 5)</label>
+              <input type="number" id="team-size" [(ngModel)]="registrationData.numberOfMembers" name="teamSize"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" (change)="updateTeamMembers()"
+                min="1" max="5">
+            </div>
+
+            <ng-container *ngFor="let member of teamMembers; let i = index">
+              <div class="mt-4" *ngIf="registrationData.option === 'team' || i === 0">
+                <label for="member{{i}}" class="block text-sm font-medium text-gray-700">Member {{i + 1}} ID (National
+                  Identification Number) </label>
+                <input type="text" id="member{{i}}" [(ngModel)]="member.id" name="memberId{{i}}"
+                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
+              </div>
+            </ng-container>
+            <div *ngIf="errorMessage" class="text-red-500">
+              {{ errorMessage }}
+            </div>
+            <div class="flex justify-end mt-6">
+              <button (click)="prepareReview()" type="button"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Review
+              </button>
+            </div>
+          </form>
+
+          <div *ngIf="reviewMode" class="review-section">
+            <h4 class="text-lg font-bold">Review Your Details</h4>
+            <ul>
+              <li><strong>Email:</strong> {{ registrationData.email }}</li>
+              <li><strong>Option:</strong> {{ registrationData.option }}</li>
+              <li><strong>Number of Members:</strong> {{ registrationData.numberOfMembers }}</li>
+              <li *ngFor="let member of teamMembers; let i = index"><strong>Member {{ i + 1 }} ID:</strong> {{ member.id
+                }}</li>
+            </ul>
+            <!-- Submit and Modify Buttons -->
+            <div class="flex justify-end mt-6">
+              <button (click)="submitRegistration()"
+                class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-4">
+                Submit Registration
+              </button>
+              <button (click)="reviewMode = false"
+                class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                Modify
+              </button>
+            </div>
+          </div>
+          <div *ngIf="registrationMessage" class="text-green-500">
+            {{ registrationMessage }}
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <h2 class="text-2xl font-semibold mt-4 text-center">2024 National Data Science Competition by RIMAI: Focusing on
+    License Plate
+    Recognition in Mauritania</h2>
+  <p class="mt-4 text-lg">Join us in a pioneering computer vision challenge hosted by RIMAI, designed to revolutionize
+    license plate recognition in Mauritania. We invite innovators, data scientists, and AI enthusiasts to develop
+    algorithms that enhance accuracy and efficiency. This competition aims to create one of the first AI-based systems
+    capable of recognizing Mauritanian license plates. The challenge comprises two parts: the first, '<strong>Data
+      Collection</strong>' (a data engineering challenge), focuses on gathering diverse and quality images, while the
+    second, '<strong>Data Science</strong>' (in a Kaggle competition form) involves creating and tuning the recognition
+    algorithms.</p>
+  <p class="mt-2 text-lg">The first part (Data Collection) starts on <strong>May 18th</strong> and ends on <strong>June
+      1st 2024</strong>.</p>
+  <p class="mt-2 text-lg">The second part (Data Science) starts on <strong>June 4th</strong> and ends on <strong>June
+      18th 2024</strong>.</p>
+
+  <h3 class="text-xl font-bold mt-8">I) Data Collection Part:</h3>
+
+  <h4 class="text-lg font-semibold mt-4">Task</h4>
+  <p class="mt-2 text-lg">For the first part, participants are tasked with compiling a unique dataset of Mauritanian
+    license plates, crucial for the competition's second phase. Image quality is paramount as it directly affects the
+    robustness and accuracy of the computer vision models. Data collection should be hybrid: 60% through web scraping
+    and 40% from original photographs.</p>
+
+  <h4 class="text-lg font-semibold mt-4">Submission</h4>
+  <h5 class="text-md font-semibold mt-2">Deadlines:</h5>
+  <ul class="list-disc list-inside ml-4">
+    <li class="mt-1">Phase 1 launch: Saturday, May 18th, 2024 at 1:00 AM (GMT)</li>
+    <li class="mt-1">Phase 1 End: Saturday, June 15th, 2024 at 11:59 PM (GMT)</li>
+  </ul>
+
+  <h5 class="text-md font-semibold mt-4">Format & Conditions:</h5>
+  <ul class="list-disc list-inside ml-4">
+    <li class="mt-1">Participants can join the competition <strong>either individually or in a team (of max 5
+        people).</strong></li>
+    <li class="mt-1">A zip (named "data_collect_group_id") should be composed of only images following the description
+      defined before:</li>
+    <ul class="list-decimal list-inside ml-4">
+      <li class="mt-1">Web scrapped images: these images should be named in the format
+        "<strong>web1_<code>&#123;image_name&#125;</code>.[jpeg, png, gif]</strong>" (60%).</li>
+      <li class="mt-1">Photos taken by your camera: the naming format is
+        "<strong>cam1_<code>&#123;image_name&#125;</code>.[jpeg, png, gif]</strong>" (40%).</li>
+    </ul>
+    <li class="mt-1">Each submission should not exceed the limit of 2GB.</li>
+    <li class="mt-1">You are allowed an unlimited number of submissions per team (or individual).</li>
+    <li class="mt-1">The code used for web scraping should be shared through a public GitHub repository. If you don't
+      have a GitHub account, create one and share the link with us upon submission of your code when you push it.</li>
+  </ul>
+
+
+  <h4 class="text-lg font-semibold mt-4">Scoring Method:</h4>
+  <p class="mt-2 text-lg">Participants will receive scores based on the <strong>quality, number, and uniqueness</strong>
+    of the images they upload. The quality score for each image is computed using the following metrics:</p>
+  <ul class="list-disc list-inside ml-4">
+    <li class="mt-1"><strong>Sharpness Score</strong>: Calculated using the Laplacian variance of the image, normalized
+      between 0 and 1.</li>
+    <li class="mt-1"><strong>Color Vibrancy Score</strong>: Computed from the standard deviation of the saturation
+      channel in the HSV color space, normalized by dividing by 128.0.</li>
+    <li class="mt-1"><strong>Contrast Score</strong>: Determined by the difference between the minimum and maximum
+      luminance values, normalized by their sum.</li>
+    <li class="mt-1"><strong>Noise Score</strong>: Based on the standard deviation of the grayscale image, normalized
+      and inverted so that lower noise results in a higher score.</li>
+  </ul>
+  <p class="mt-2 text-lg">The final quality score for each image (<code>Q<sub>i</sub></code>) is the average of these
+    four metrics. The overall score for a participant is then calculated by the following formula:</p>
+  <pre class="bg-gray-100 p-4 rounded-md mt-2">
+  <code>S = (1/N) ∑<sub>i=1</sub><sup>N</sup> Q<sub>i</sub></code>
+  </pre>
+  <p class="mt-2 text-lg"><code>Where:</code></p>
+  <ul class="list-disc list-inside ml-4">
+    <li class="mt-1"><code>S</code>: the overall score for a participant</li>
+    <li class="mt-1"><code>N</code>: the total number of images uploaded</li>
+    <li class="mt-1"><code>Q<sub>i</sub></code>: Quality score of the i-th image as described above</li>
+  </ul>
+  <p class="mt-2 text-lg">The final score of each submission is bounded between 0 and 1.</p>
+
+
+  <h4 class="text-lg font-semibold mt-4">Rules</h4>
+  <p class="mt-2 text-lg">Participants must adhere to all the conditions mentioned above. Accurate information,
+    including your "National Identification Number," is required for prize attribution. Failure to comply with any
+    conditions will result in disqualification.</p>
+  <p class="mt-2 text-lg">The competition rules include guidelines on data usage, code submission, and evaluation
+    metrics. Please read the rules carefully before submitting your entry.</p>
+
+  <p class="mt-2 text-lg"><strong>You can join the competition either individually or in a group (of max 5
+      participants).</strong></p>
+
+  <h4 class="text-lg font-semibold mt-4">Conclusion</h4>
+  <p class="mt-2 text-lg">We hope that this part of the competition will inspire participants to utilize their data
+    engineering skills to collect data in the most efficient manner possible. Good luck to all participants!</p>
+  <div class="flex justify-center mt-4 space-x-4">
+    <a href="/submission" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+      Submission
+    </a>
+    <a href="https://rim-ai.notion.site/Competition-FAQ-1af142212dab42939e22bc98f6396700" target="_blank"
+      class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 24V0m8 0v24" />
+        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"></circle>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16h.01M12 12h.01M12 8h.01" />
+      </svg>
+      Ask a Question
+    </a>
+  </div>
+</div>

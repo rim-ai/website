@@ -1,0 +1,747 @@
+<div class="w-full">
+  <div class="bg-yellow-200 mx-auto px-2 sm:px-5">
+    <div class="flex items-center justify-center">
+      <div class="w-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+          <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#19191B"></rect>
+          <line x1="16.5" y1="10" x2="16.5" y2="18" stroke="#19191B"></line>
+          <line x1="16.5" y1="20" x2="16.5" y2="22" stroke="#19191B"></line>
+        </svg>
+      </div>
+      <div class="w-px h-10 bg-yellow-900 bg-opacity-30"></div>
+      <p class="text-center text-gray-900 text-lg mx-auto">Arabic version is comming soon !</p>
+    </div>
+  </div>
+</div>
+<section class="relative pb-20 overflow-hidden">
+  <img class="absolute top-0 right-0 mt-10 mr-10" src="assets/light-orange-blue-1.png" alt="">
+  <img class="absolute top-0 right-0 mt-64 sm:mt-80 lg:mt-64 w-2/5 animate-moveHand" src="assets/robot-hand-header.png" alt="">
+  <nav class="relative py-6 mb-12 md:mb-20 bg-transparent">
+    <div class="container px-4 mx-auto">
+      <div class="flex items-center">
+        <a class="inline-block text-lg font-bold" href="#">
+          <img class="h-10" src="assets/logo.png" alt="" style="width: 80px; height: 80px;">
+        </a>
+        <div class="lg:hidden ml-auto">
+          <button (click)="open = true" class="navbar-burger flex w-12 h-12 items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-md transition duration-200">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="hidden lg:flex ml-14 lg:w-auto lg:space-x-12">
+          <li class="group relative">
+            <a class="inline-block text-sm text-gray-900 hover:text-orange-900 font-medium" href="#">Home</a>
+            <div class="hidden group-hover:block absolute top-full left-0 min-w-max max-w-xs p-4 z-30">
+              <div class="-mb-2 ml-8 w-4 h-4 rounded-sm bg-white border-l border-t border-gray-200 transform rotate-45"></div>
+              <div class="w-full max-w-xs bg-white border border-gray-100 rounded-3xl pt-4 pb-4 px-4">
+                <div class="pb-3 mb-3 border-b border-gray-100"><a class="block py-3 px-4 text-sm text-gray-900 hover:bg-orange-50 rounded-lg" href="#">Blog</a><a class="block py-3 px-4 text-sm text-gray-900 hover:bg-orange-50 rounded-lg" href="#">Use cases</a>
+                  <a class="block py-3 px-4 text-sm text-gray-900 hover:bg-orange-50 rounded-lg" href="#">Projects</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a class="inline-block text-sm text-gray-900 hover:text-orange-900 font-medium" href="/challenge">Challenge</a></li>
+          <li><a class="inline-block text-sm text-gray-900 hover:text-orange-900 font-medium" href="#">About us</a></li>
+          <li><a class="inline-block text-sm text-gray-900 hover:text-orange-900 font-medium" href="#">Contact</a></li>
+        </ul>
+        <div class="hidden lg:block ml-auto">
+          <div class="flex items-center">
+            <a class="relative group inline-block py-3 px-4 text-sm font-semibold text-purple-900 hover:text-white border border-purple-200 rounded-md overflow-hidden transition duration-300" href="#">
+              <div class="absolute top-0 right-full w-full h-full bg-purple-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
+              <span class="relative">Join us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="relative container px-4 mx-auto">
+    <div class="max-w-xl xl:max-w-4xl">
+      <h1 class="font-heading text-5xl xs:text-6xl md:text-8xl xl:text-10xl font-bold text-gray-900 mb-8 sm:mb-14">
+        <span>Mauritanian AI community </span>
+        <span class="font-serif italic text-purple-900">RIMAI</span>
+      </h1>
+      <h2 class="font-heading text-5xl xs:text-6xl md:text-8xl xl:text-10xl font-bold text-gray-900 mb-8 sm:mb-14">
+        <span>We are </span>
+        <span style="margin-top: 10px; margin-bottom: 20px;" class="typed-element font-heading font-serif italic text-5xl xs:text-6xl md:text-8xl xl:text-10xl font-bold text-gray-900 mb-8 sm:mb-14" style=" display: inline;color:#ffc800">AI Leaders</span>
+      </h2>
+      <div class="md:flex mb-14 max-w-xs sm:max-w-sm md:max-w-none">
+        <div class="max-w-md">
+          <p class="md:text-xl text-gray-900 font-semibold">Become a part of the pioneering Mauritanian AI community, a vibrant network of professionals, enthusiasts, and experts dedicated to advancing the field of artificial intelligence right here in Mauritania.
+          </p>
+        </div>
+      </div>
+      <div class="sm:flex items-center">
+        <a class="relative group inline-block w-full sm:w-auto py-4 px-6 text-white font-semibold bg-purple-900 rounded-md overflow-hidden" href="#">
+          <div class="absolute top-0 right-full w-full h-full bg-gray-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
+          <div class="relative flex items-center justify-center">
+            <a class="mr-4" href="https://docs.google.com/forms/d/e/1FAIpQLSdk6ty0kiK1x04JPGgOQS_iGBAdZuALlfNI5kk2lBn-k8rl7w/viewform">Join the venture</a>
+            <svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.83 5.29L2.59 1.05C2.49704 0.956274 2.38644 0.881879 2.26458 0.83111C2.14272 0.780342 2.01202 0.754204 1.88 0.754204C1.74799 0.754204 1.61729 0.780342 1.49543 0.83111C1.37357 0.881879 1.26297 0.956274 1.17 1.05C0.983753 1.23736 0.879211 1.49082 0.879211 1.755C0.879211 2.01919 0.983753 2.27264 1.17 2.46L4.71 6L1.17 9.54C0.983753 9.72736 0.879211 9.98082 0.879211 10.245C0.879211 10.5092 0.983753 10.7626 1.17 10.95C1.26344 11.0427 1.37426 11.116 1.4961 11.1658C1.61794 11.2155 1.7484 11.2408 1.88 11.24C2.01161 11.2408 2.14207 11.2155 2.26391 11.1658C2.38575 11.116 2.49656 11.0427 2.59 10.95L6.83 6.71C6.92373 6.61704 6.99813 6.50644 7.04889 6.38458C7.09966 6.26272 7.1258 6.13201 7.1258 6C7.1258 5.86799 7.09966 5.73728 7.04889 5.61543C6.99813 5.49357 6.92373 5.38297 6.83 5.29Z" fill="#FFF2EE"></path>
+            </svg>
+          </div>
+        </a>
+        <div class="flex mt-8 sm:mt-0 sm:ml-8 items-center">
+          <img class="w-10 h-10" src="assets/lemine2.png" style="border-radius: 100%;" alt="Mohamed Lemine Beydia - President" title="Mohamed Lemine Beydia - Président">
+          <img class="w-10 -ml-2 h-10" src="assets/morad2.png" style="border: 3px solid white; border-radius: 100%;" alt="HABIBOULLAH Eze Eddine - CTO" title="HABIBOULLAH Eze Eddine - CTO">
+          <img class="w-10 -ml-2 h-10" src="assets/aicha2.png" style="border: 3px solid white; border-radius: 100%;" alt="Saad Aicha" title="Saad Aicha">
+          <div class="p-px bg-white rounded-full -ml-2">
+            <div class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200">
+              <span class="font-semibold">10+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="open" class="navbar-menu fixed inset-0 w-5/6 max-w-md z-50 bg-white border-r overflow-y-auto transform transition-transform duration-300">
+    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+    <nav class="relative flex flex-col py-6 px-10 w-full h-full overflow-y-auto">
+      <div class="flex items-center mb-16">
+        <a class="mr-auto text-2xl font-medium leading-none" href="#">
+          <img class="h-10" src="assets/logo.png" alt="" width="auto">
+        </a>
+        <button (click)="open = false" class="navbar-close">
+          <svg class="h-6 w-6 text-gray-500 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div>
+        <ul class="mb-2">
+          <li><a class="block py-4 px-5 text-gray-900 hover:bg-orange-50 rounded-lg" href="#">Home</a></li>
+          <li><a class="block py-4 px-5 text-gray-900 hover:bg-orange-50 rounded-lg" href="#">Blog</a></li>
+          <li><a class="block py-4 px-5 text-gray-900 hover:bg-orange-50 rounded-lg" href="#">Use cases</a></li>
+          <li><a class="block py-4 px-5 text-gray-900 hover:bg-orange-50 rounded-lg" href="/challenge">Challenge</a></li>
+          <li><a class="block py-4 px-5 text-gray-900 hover:bg-orange-50 rounded-lg" href="#">Events</a></li>
+          <li><a class="block py-4 px-5 text-gray-900 hover:bg-orange-50 rounded-lg" href="#">About us</a></li>
+          <li><a class="block py-4 px-5 text-gray-900 hover:bg-orange-50 rounded-lg" href="#">Contact</a></li>
+        </ul>
+        <div class="flex px-6 mb-16 items-center">
+          <a class="inline-block py-3 px-4 text-sm font-semibold text-orange-900 hover:text-white border border-gray-300 hover:border-orange-600 hover:bg-orange-900 rounded-md transition duration-200" href="https://docs.google.com/forms/d/e/1FAIpQLSdk6ty0kiK1x04JPGgOQS_iGBAdZuALlfNI5kk2lBn-k8rl7w/viewform">Join us</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+
+<section class="bg-purple-900 overflow-hidden py-16">
+  <div class="container px-4 mx-auto">
+    <div class="relative mb-32">
+      <div class="hidden lg:block absolute top-0 left-12">
+        <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewbox="0 0 500 500" fill="none">
+          <path
+            d="M0.5 498.311V304.054C0.5 136.406 136.406 0.5 304.054 0.5H498.311C498.967 0.5 499.5 1.03289 499.5 1.68919V136.561C499.5 137.217 498.967 137.75 498.311 137.75H342.061C290.59 137.75 239.516 163.123 201.319 201.319C163.123 239.516 137.75 290.59 137.75 342.061V498.311C137.75 498.967 137.217 499.5 136.561 499.5H1.68919C1.03249 499.5 0.5 498.967 0.5 498.311Z"
+            fill="#7f10d4" stroke="#7f10d4"></path>
+          <!-- <defs><lineargGradient id="paint0_linear_243_15182" x1="0" y1="500" x2="500" y2="0" gradientunits="userSpaceOnUse"><stop stop-color="#6F0B45"><stop offset="1" stop-color="#6F0B45" stop-opacity="0"></lineargGradient></defs> -->
+        </svg>
+      </div>
+      <div class="hidden lg:block absolute top-0 right-12">
+        <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewbox="0 0 500 500" fill="none">
+          <path
+            d="M499.5 1.68919V195.946C499.5 363.594 363.594 499.5 195.946 499.5H1.68919C1.03289 499.5 0.5 498.967 0.5 498.311V363.439C0.5 362.783 1.03289 362.25 1.68919 362.25H157.939C209.41 362.25 260.484 336.877 298.681 298.681C336.877 260.484 362.25 209.41 362.25 157.939V1.68919C362.25 1.03289 362.783 0.5 363.439 0.5H498.311C498.967 0.5 499.5 1.03289 499.5 1.68919Z"
+            fill="#7f10d4" stroke="#7f10d4"></path>
+          <defs>
+            <linearGradient id="paint0_linear_243_15181" x1="499.998" y1="2.85805e-05" x2="8.49831" y2="500"
+              gradientunits="userSpaceOnUse">
+              <stop stop-color="#581c87de" />
+              <stop offset="1" stop-color="#581c87de" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="relative z-10">
+        <h1
+          class="text-white text-center text-5xl lg:text-7xl font-bold font-heading max-w-lg lg:max-w-3xl mx-auto pt-14 pb-32">
+          Rim AI: Mission, Value and Vision</h1>
+        <div class="border border-purple-700 bg-purple-900 rounded-3xl flex flex-wrap">
+          <div class="w-full md:w-1/2 lg:w-1/4 py-8">
+            <div class="md:border-r border-purple-700 px-12">
+              <p class="text-purple-200 mb-2 text-center">Founded</p>
+              <h2 class="text-4xl lg:text-5xl font-semibold text-white text-center">2024</h2>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 py-8">
+            <div class="lg:border-r border-purple-700 px-12">
+              <p class="text-purple-200 mb-2 text-center">Executive members</p>
+              <h2 class="text-4xl lg:text-5xl font-semibold text-white text-center">10</h2>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 py-8">
+            <div class="md:border-r border-purple-700 px-12">
+              <p class="text-purple-200 mb-2 text-center"> Members</p>
+              <h2 class="text-4xl lg:text-5xl font-semibold text-white text-center">35</h2>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 py-8">
+            <div class="px-12">
+              <p class="text-purple-200 mb-2 text-center">Events</p>
+              <h2 class="text-4xl lg:text-5xl font-semibold text-white text-center">0</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative py-20 overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-wrap -mx-4">
+          <!-- Mission Section -->
+          <div class="w-full lg:w-1/3 px-4 lg:pt-16 mb-8 lg:mb-0">
+            <div class="max-w-sm mx-auto p-10 bg-gray-50 border border-gray-100 rounded-3xl">
+              <div class="flex mb-4 bg-white rounded-full" style="width: 100px; height: 100px;">
+                <img src="assets/mission.png" alt="Vision Icon" style="display: block; width: 100%; height: 100%;">
+              </div>
+              <span class="block text-2xl font-semibold text-gray-900 mb-2">Our Mission</span>
+              <p class="text-gray-500 mb-6">Fostering the growth and democratization of AI in Mauritania by promoting AI
+                awareness, encouraging adoption for social good, and facilitating collaboration.</p>
+              <ul class="mb-10">
+                <li class="flex mb-6 items-center">
+                  <img src="assets/green-check.svg" alt="">
+                  <span class="ml-2 text-sm text-gray-900">Promoting AI Awareness</span>
+                </li>
+                <li class="flex mb-6 items-center">
+                  <img src="assets/green-check.svg" alt="">
+                  <span class="ml-2 text-sm text-gray-900">Encouraging Adoption for Social Good</span>
+                </li>
+                <li class="flex mb-6 items-center">
+                  <img src="assets/green-check.svg" alt="">
+                  <span class="ml-2 text-sm text-gray-900">Facilitating Collaboration</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Vision Section -->
+          <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+            <div class="max-w-sm mx-auto p-10 bg-gray-900 rounded-3xl">
+              <div class="flex mb-4  rounded-full" style="width: 100px; height: 100px;">
+                <img src="assets/fusee.png" alt="Vision Icon" style="display: block; width: 100%; height: 100%;">
+              </div>
+
+              <span class="block text-2xl font-semibold text-white mb-2">Our Vision</span>
+              <p class="text-gray-500 mb-6">Being at the forefront of AI education and innovation, shaping a future
+                where AI technology drives progress and creates a positive social impact in Mauritania and beyond.</p>
+              <ul class="mb-10">
+                <li class="flex mb-6 items-center">
+                  <img src="assets/green-check.svg" alt="">
+                  <span class="ml-2 text-sm text-white">Champion Excellence in AI Education and Research</span>
+                </li>
+                <li class="flex mb-6 items-center">
+                  <img src="assets/green-check.svg" alt="">
+                  <span class="ml-2 text-sm text-white">Drive Innovation Through AI Solutions</span>
+                </li>
+                <li class="flex mb-6 items-center">
+                  <img src="assets/green-check.svg" alt="">
+                  <span class="ml-2 text-sm text-white">Create a Positive Social Impact</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Values Section -->
+          <div class="w-full lg:w-1/3 px-4 lg:pt-16">
+            <div class="max-w-sm mx-auto p-10 bg-gray-50 border border-gray-100 rounded-3xl">
+              <div class="flex mb-4 bg-white rounded-full" style="width: 100px; height: 100px;">
+                <img src="assets/valeur.png" alt="Vision Icon" style="display: block; width: 100%; height: 100%;">
+              </div>
+              <span class="block text-2xl font-semibold text-gray-900 mb-2">Our Values</span>
+              <p class="text-gray-500 mb-6">The cornerstone of our community, guiding our actions and decisions towards
+                integrity, innovation, diversity, inclusion, collaboration, and social impact.</p>
+              <ul class="mb-10">
+                <li class="flex mb-6 items-center">
+                  <img src="assets/green-check.svg" alt="">
+                  <span class="ml-2 text-sm text-gray-900">Integrity and Innovation</span>
+                </li>
+                <li class="flex mb-6 items-center">
+                  <img src="assets/green-check.svg" alt="">
+                  <span class="ml-2 text-sm text-gray-900">Diversity and Inclusion</span>
+                </li>
+                <li class="flex mb-6 items-center">
+                  <img src="assets/green-check.svg" alt="">
+                  <span class="ml-2 text-sm text-gray-900">Collaboration and Social Impact</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<section class="relative py-20 md:py-24 overflow-hidden">
+
+  <div class="relative container px-4 mx-auto">
+    <div class="max-w-2xl lg:max-w-3xl mx-auto xl:max-w-7xl">
+      <div class="flex flex-wrap mb-20 -mx-4 items-center">
+        <div class="w-full xl:w px-4">
+          <div>
+            <h1 class="font-heading text-center text-5xl xs:text-6xl md:text-7xl font-bold text-gray-900 mb-8">
+              <span>Executive Members</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-4 -mb-12">
+        <div class="w-full md:w-1/2 xl:w-1/5  px-4 mb-12">
+          <div class="max-w-xs md:max-w-none mx-auto">
+            <img class="block mb-4 w-full h-72 object-cover rounded-3xl" src="./assets/lemine2.png" alt="">
+            <h5 class="text-2xl font-semibold text-gray-900 mb-2">Mohamed Beydia</h5>
+            <span class="text-gray-500">Co-Founder, President</span>
+            <p class="text-gray-500">Head of Data & Analytics At <b> CANAL+</b></p>
+
+            <div class="flex flex-wrap gap-2">
+              <a class="h-6 inline-flex items-center justify-center w-full sm:w-auto text-center py-2 px-4 rounded-full bg-purple-900 border border-purple-700 hover:bg-purple-800 focus:ring focus:ring-purple-800 text-white text-sm font-semibold transition duration-200"
+                href="#">
+                Luxembourg
+              </a>
+
+            </div>
+
+
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 xl:w-1/5  px-4 mb-12">
+          <div class="max-w-xs md:max-w-none mx-auto">
+            <img class="block mb-4 w-full h-72 object-cover rounded-3xl" src="./assets/morad2.png" alt="">
+            <h5 class="text-2xl font-semibold text-gray-900 mb-2">Eze Eddine Habiboullah</h5>
+            <span class="text-gray-500">Co-Founder, CTO</span>
+            <p class="text-gray-500">Lead Data Engineer At <b> VALEO</b></p>
+            <div class="flex flex-wrap gap-2 mb-10">
+
+              <a class="h-6 inline-flex items-center justify-center w-full sm:w-auto text-center py-2 px-4 rounded-full bg-purple-900 border border-purple-700 hover:bg-purple-800 focus:ring focus:ring-purple-800 text-white text-sm font-semibold transition duration-200"
+                href="#">
+                France
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 xl:w-1/5  px-4 mb-12">
+          <div class="max-w-xs md:max-w-none mx-auto">
+            <img class="block mb-4 w-full h-72 object-cover rounded-3xl" src="assets/aichav4.jpeg" alt="">
+            <h5 class="text-2xl font-semibold text-gray-900 mb-2">Aicha Saad</h5>
+            <span class="text-gray-500">Co-Founder, General Secretary</span>
+            <p class="text-gray-500">Lead Business Data Science <b> La Poste Group</b></p>
+
+            <div class="flex flex-wrap gap-2 mb-10">
+              <a class="h-6 inline-flex items-center justify-center w-full sm:w-auto text-center py-2 px-4 rounded-full bg-purple-900 border border-purple-700 hover:bg-purple-800 focus:ring focus:ring-purple-800 text-white text-sm font-semibold transition duration-200"
+                href="#">
+                France
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 xl:w-1/5  px-4 mb-12">
+          <div class="max-w-xs md:max-w-none mx-auto">
+            <img class="block mb-4 w-full h-72 object-cover rounded-3xl" src="assets/abd.jpeg" alt="">
+            <h5 class="text-2xl font-semibold text-gray-900 mb-2">Abdallahy Baba Ahmed</h5>
+            <span class="text-gray-500"> Vice-President</span>
+            <p class="text-gray-500">CEO <b> Kirobi </b></p>
+
+            <div class="flex flex-wrap gap-2 mb-10">
+              <a class="h-6 inline-flex items-center justify-center w-full sm:w-auto text-center py-2 px-4 rounded-full bg-purple-900 border border-purple-700 hover:bg-purple-800 focus:ring focus:ring-purple-800 text-white text-sm font-semibold transition duration-200"
+                href="#">
+                Mauritania
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 xl:w-1/5  px-4 mb-12">
+          <div class="max-w-xs md:max-w-none mx-auto">
+            <img class="block mb-4 w-full h-72 object-cover rounded-3xl" src="./assets/deliaba.jpg" alt="">
+            <h5 class="text-2xl font-semibold text-gray-900 mb-2">Dielia Ba</h5>
+            <span class="text-gray-500">Treasurer</span>
+            <p class="text-gray-500">Manager Advanced Analytics <b> Group M / Mindshare </b></p>
+
+            <div class="flex flex-wrap gap-2 mb-10">
+              <a class="h-6 inline-flex items-center justify-center w-full sm:w-auto text-center py-2 px-4 rounded-full bg-purple-900 border border-purple-700 hover:bg-purple-800 focus:ring focus:ring-purple-800 text-white text-sm font-semibold transition duration-200"
+                href="#">
+                USA
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="flex flex-wrap -mx-4 -mt-4">
+
+        <div class="w-full md:w-1/2 xl:w-1/5 px-4 mb-12">
+          <div class="max-w-xs md:max-w-none mx-auto">
+            <img class="block mb-4 w-full h-72 object-cover rounded-3xl" src="./assets/mama.jpg" alt="">
+            <h5 class="text-2xl font-semibold text-gray-900 mb-2">Mama M'hamed</h5>
+            <span class="text-gray-500">Chief AI Officer</span>
+            <p class="text-gray-500">Head of Data at <b> Abbvie</b></p>
+
+            <div class="flex flex-wrap gap-2 mb-10">
+              <a class="h-6 inline-flex items-center justify-center w-full sm:w-auto text-center py-2 px-4 rounded-full bg-purple-900 border border-purple-700 hover:bg-purple-800 focus:ring focus:ring-purple-800 text-white text-sm font-semibold transition duration-200"
+                href="#">
+                France
+              </a>
+              <a class="h-6 inline-flex items-center justify-center w-full sm:w-auto text-center py-2 px-4 rounded-full bg-purple-900 border border-purple-700 hover:bg-purple-800 focus:ring focus:ring-purple-800 text-white text-sm font-semibold transition duration-200"
+                href="#">
+                USA
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 xl:w-1/5 px-4 mb-12">
+          <div class="max-w-xs md:max-w-none mx-auto">
+            <img class="block mb-4 w-full h-72 object-cover rounded-3xl" src="assets/abdhamid2.png" alt="">
+            <h5 class="text-2xl font-semibold text-gray-900 mb-2">Abdel Hamid Mohamed Cheikh</h5>
+            <span class="text-gray-500">Lead Gen AI Product</span>
+            <p class="text-gray-500">Senior Data Scientist at <b> BDA Global Services </b></p>
+
+            <div class="flex flex-wrap gap-2 mb-10">
+              <a class="h-6 inline-flex items-center justify-center w-full sm:w-auto text-center py-2 px-4 rounded-full bg-purple-900 border border-purple-700 hover:bg-purple-800 focus:ring focus:ring-purple-800 text-white text-sm font-semibold transition duration-200"
+                href="#">
+                Luxembourg
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 xl:w-1/5 px-4 mb-12">
+          <div class="max-w-xs md:max-w-none mx-auto">
+            <img class="block mb-4 w-full h-72 object-cover rounded-3xl" src="assets/avatar.webp" alt="">
+            <h5 class="text-2xl font-semibold text-gray-900 mb-2">Aminetou Abdel Jelil</h5>
+            <span class="text-gray-500">Manager Data & Analytics</span>
+            <p class="text-gray-500">Manager Data and Analytics at <b> Deloitte </b></p>
+
+            <div class="flex flex-wrap gap-2 mb-10">
+              <a class="h-6 inline-flex items-center justify-center w-full sm:w-auto text-center py-2 px-4 rounded-full bg-purple-900 border border-purple-700 hover:bg-purple-800 focus:ring focus:ring-purple-800 text-white text-sm font-semibold transition duration-200"
+                href="#">
+                France
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 xl:w-1/5 px-4 mb-12">
+          <div class="max-w-xs md:max-w-none mx-auto">
+            <img class="block mb-4 w-full h-72 object-cover rounded-3xl" src="assets/ABDELLAHI_profile.jpg" alt="">
+            <h5 class="text-2xl font-semibold text-gray-900 mb-2">Abdellahi El Moustapha</h5>
+            <span class="text-gray-500">Data Scientist</span>
+            <p class="text-gray-500"> <b> ESP Data Club </b></p>
+
+            <div class="flex flex-wrap gap-2 mb-10">
+              <a class="h-6 inline-flex items-center justify-center w-full sm:w-auto text-center py-2 px-4 rounded-full bg-purple-900 border border-purple-700 hover:bg-purple-800 focus:ring focus:ring-purple-800 text-white text-sm font-semibold transition duration-200"
+                href="#">
+                Mauritania
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h1 class="text-center text-4xl lg:text-5xl font-bold font-heading mb-4">Join our events</h1>
+    <p class="text-center text-gray-600 text-lg mb-20"></p>
+    <div class="border border-gray-100 bg-white rounded-3xl pt-6 px-6 mb-12">
+      <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
+        <div class="flex items-center gap-2 flex-wrap">
+          <p class="font-bold font-heading">February</p>
+          <p class="text-gray-500 font-medium">2024</p>
+          <a class="text-gray-400 hover:text-gray-600 transition duration-200" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+              <path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <a class="py-2 px-4 rounded-full border border-gray-200 shadow text-sm font-semibold hover:bg-gray-50 focus:ring focus:ring-orange-200 transition duration-200"
+            href="#">Today</a>
+          <a class="p-2 rounded-full border border-gray-200 shadow hover:bg-gray-50 focus:ring focus:ring-orange-200 transition duration-200"
+            href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+              <path d="M13.125 16.25L6.875 10L13.125 3.75" stroke="#282828" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </a>
+          <a class="p-2 rounded-full border border-gray-200 shadow hover:bg-gray-50 focus:ring focus:ring-orange-200 transition duration-200"
+            href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+              <path d="M6.875 3.75L13.125 10L6.875 16.25" stroke="#282828" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="overflow-x-auto relative">
+        <div class="absolute bottom-0 left-0 w-full h-24"
+          style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.60) 53.65%, #FFF 100%);">
+        </div>
+        <div class="flex">
+          <div class="flex flex-col flex-1">
+            <div class="border-t border-b border-gray-50 py-2 px-24">
+              <p class="text-center text-gray-500 text-sm font-semibold">Mon</p>
+            </div>
+            <div class="flex-1 border-r border-gray-50">
+              <a class="bg-orange-50 py-3 px-4 flex flex-wrap gap-3 hover:bg-orange-100 transition duration-200"
+                href="#">
+                <div class="bg-orange-500 w-5 h-5 flex items-center justify-center rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none">
+                    <path
+                      d="M8.35879 8.2051L8.35996 8.20616C8.77017 8.57643 8.9041 9.14137 8.70399 9.65877C8.50383 10.1713 8.02404 10.5 7.46999 10.5H4.52499C3.97517 10.5 3.49091 10.1706 3.29102 9.65885C3.09086 9.14143 3.22479 8.57645 3.63502 8.20616L3.63502 8.20616L3.63619 8.20509L5.51319 6.5H6.48179L8.35879 8.2051ZM5.08999 9.57H6.90999C7.37113 9.57 7.74999 9.19114 7.74999 8.73C7.74999 8.27365 7.3809 7.89 6.90999 7.89H5.08999C4.62885 7.89 4.24999 8.26886 4.24999 8.73C4.24999 9.18634 4.61907 9.57 5.08999 9.57Z"
+                      fill="white" stroke="white"></path>
+                    <path
+                      d="M9.17496 2.16C8.89996 1.455 8.22996 1 7.47496 1H4.52496C3.76996 1 3.09996 1.455 2.82496 2.16C2.55496 2.87 2.73996 3.655 3.30496 4.165L5.32496 6H6.67996L8.69996 4.165C9.25996 3.655 9.44496 2.87 9.17496 2.16ZM6.90996 3.615H5.08996C4.89996 3.615 4.74996 3.46 4.74996 3.275C4.74996 3.09 4.90496 2.935 5.08996 2.935H6.90996C7.09996 2.935 7.24996 3.09 7.24996 3.275C7.24996 3.46 7.09496 3.615 6.90996 3.615Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-orange-900 text-xs font-bold font-heading mb-1">...</p>
+                  <p class="text-gray-600 text-xs mb-3">-:-- PM − -:-- PM </p>
+                  <!-- <div
+                      class="inline-block py-1 px-2 rounded-md bg-orange-50 border border-orange-100 text-orange-500 text-xs font-medium mb-4">
+                      Producvitity</div> -->
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col flex-1">
+            <div class="border-t border-b border-gray-50 py-2 px-24">
+              <p class="text-center text-gray-500 text-sm font-semibold">Tue</p>
+            </div>
+            <div class="flex-1 border-r border-gray-50">
+              <div class="h-72"></div>
+              <div class="border-t border-gray-50 pt-3 pb-6 px-4">
+                <div class="flex flex-wrap gap-3 mb-4">
+                  <div class="rounded-md border border-gray-100 bg-white w-5 h-5 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none">
+                      <path
+                        d="M9.25 11.375C8.08 11.375 7.125 10.42 7.125 9.25V9C7.125 8.795 7.295 8.625 7.5 8.625C7.705 8.625 7.875 8.795 7.875 9V9.25C7.875 10.01 8.49 10.625 9.25 10.625C10.01 10.625 10.625 10.01 10.625 9.25C10.625 8.49 10.01 7.875 9.25 7.875H1C0.795 7.875 0.625 7.705 0.625 7.5C0.625 7.295 0.795 7.125 1 7.125H9.25C10.42 7.125 11.375 8.08 11.375 9.25C11.375 10.42 10.42 11.375 9.25 11.375Z"
+                        fill="#B8B8B8"></path>
+                      <path
+                        d="M9.25 6.375H1C0.795 6.375 0.625 6.205 0.625 6C0.625 5.795 0.795 5.625 1 5.625H9.25C10.01 5.625 10.625 5.01 10.625 4.25C10.625 3.49 10.01 2.875 9.25 2.875C8.49 2.875 7.875 3.49 7.875 4.25V4.5C7.875 4.705 7.705 4.875 7.5 4.875C7.295 4.875 7.125 4.705 7.125 4.5V4.25C7.125 3.08 8.08 2.125 9.25 2.125C10.42 2.125 11.375 3.08 11.375 4.25C11.375 5.42 10.42 6.375 9.25 6.375Z"
+                        fill="#B8B8B8"></path>
+                      <path
+                        d="M4.655 4.875H1C0.795 4.875 0.625 4.705 0.625 4.5C0.625 4.295 0.795 4.125 1 4.125H4.655C5.19 4.125 5.625 3.69 5.625 3.155C5.625 2.62 5.19 2.185 4.655 2.185C4.12 2.185 3.685 2.62 3.685 3.155V3.345C3.685 3.55 3.515 3.72 3.31 3.72C3.105 3.72 2.935 3.555 2.935 3.345V3.155C2.935 2.205 3.705 1.435 4.655 1.435C5.605 1.435 6.375 2.205 6.375 3.155C6.375 4.105 5.605 4.875 4.655 4.875Z"
+                        fill="#B8B8B8"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="bg-gray-100 rounded-xs h-2 w-36 mb-2"></div>
+                    <div class="bg-gray-50 rounded-xs h-2 w-32"></div>
+                  </div>
+                </div>
+                <div class="inline-block px-2 py-1 rounded-md border border-gray-100 text-gray-700 text-xs font-medium">
+                  ..</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col flex-1">
+            <div class="border-t border-b border-gray-50 py-2 px-24">
+              <p class="text-center text-gray-500 text-sm font-semibold">Wed</p>
+            </div>
+            <div class="flex-1 border-r border-gray-50">
+              <div class="h-12"></div>
+              <a class="bg-orange-50 py-3 px-4 flex flex-wrap gap-3 hover:bg-orange-100 transition duration-200"
+                href="#">
+                <div class="bg-orange-500 w-5 h-5 flex items-center justify-center rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none">
+                    <path
+                      d="M8.35879 8.2051L8.35996 8.20616C8.77017 8.57643 8.9041 9.14137 8.70399 9.65877C8.50383 10.1713 8.02404 10.5 7.46999 10.5H4.52499C3.97517 10.5 3.49091 10.1706 3.29102 9.65885C3.09086 9.14143 3.22479 8.57645 3.63502 8.20616L3.63502 8.20616L3.63619 8.20509L5.51319 6.5H6.48179L8.35879 8.2051ZM5.08999 9.57H6.90999C7.37113 9.57 7.74999 9.19114 7.74999 8.73C7.74999 8.27365 7.3809 7.89 6.90999 7.89H5.08999C4.62885 7.89 4.24999 8.26886 4.24999 8.73C4.24999 9.18634 4.61907 9.57 5.08999 9.57Z"
+                      fill="white" stroke="white"></path>
+                    <path
+                      d="M9.17496 2.16C8.89996 1.455 8.22996 1 7.47496 1H4.52496C3.76996 1 3.09996 1.455 2.82496 2.16C2.55496 2.87 2.73996 3.655 3.30496 4.165L5.32496 6H6.67996L8.69996 4.165C9.25996 3.655 9.44496 2.87 9.17496 2.16ZM6.90996 3.615H5.08996C4.89996 3.615 4.74996 3.46 4.74996 3.275C4.74996 3.09 4.90496 2.935 5.08996 2.935H6.90996C7.09996 2.935 7.24996 3.09 7.24996 3.275C7.24996 3.46 7.09496 3.615 6.90996 3.615Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-orange-900 text-xs font-bold font-heading mb-1">...</p>
+                  <p class="text-gray-600 text-xs mb-3">-:-- PM − -:-- PM </p>
+                  <!-- <div
+                      class="inline-block py-1 px-2 rounded-md bg-orange-50 border border-orange-100 text-orange-500 text-xs font-medium mb-4">
+                      Producvitity</div> -->
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col flex-1">
+            <div class="border-t border-b border-gray-50 py-2 px-24">
+              <p class="text-center text-gray-500 text-sm font-semibold">Thu</p>
+            </div>
+            <div class="flex-1 border-r border-gray-50">
+              <div class="h-56"></div>
+              <a class="bg-purple-50 py-3 px-4 flex flex-wrap gap-3 hover:bg-purple-100 transition duration-200"
+                href="#">
+                <div class="bg-purple-900 w-5 h-5 flex items-center justify-center rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none">
+                    <path
+                      d="M9.10984 7.01719L9.10998 7.0172V7.005C9.10998 6.52852 8.73128 6.12664 8.23801 6.125L6.23499 6.10497L6.23499 5.875H7.13999C7.62113 5.875 8.01499 5.48114 8.01499 5C8.01499 4.51886 7.62113 4.125 7.13999 4.125H6.23499V3.875H8.23498C8.71613 3.875 9.10998 3.48114 9.10998 3C9.10998 2.51886 8.71613 2.125 8.23498 2.125H6.35213C6.53249 1.74626 6.88444 1.5 7.23499 1.5H9.23498C9.78493 1.5 10.235 1.94723 10.235 2.5V9.5C10.235 10.0528 9.78493 10.5 9.23498 10.5H7.23499C6.88444 10.5 6.53249 10.2537 6.35213 9.875H7.68499C8.17546 9.875 8.55999 9.47679 8.55999 9C8.55999 8.52321 8.17546 8.125 7.68499 8.125H6.23499V7.85503L8.22497 7.87497L8.22497 7.875H8.22998H8.22999H8.22999H8.23H8.23H8.23H8.23001H8.23001H8.23002H8.23002H8.23002H8.23003H8.23003H8.23004H8.23004H8.23004H8.23005H8.23005H8.23006H8.23006H8.23007H8.23007H8.23007H8.23008H8.23008H8.23009H8.23009H8.2301H8.2301H8.23011H8.23011H8.23012H8.23012H8.23013H8.23013H8.23014H8.23014H8.23015H8.23016H8.23016H8.23017H8.23017H8.23018H8.23018H8.23019H8.2302H8.2302H8.23021H8.23021H8.23021H8.23022H8.23022H8.23022H8.23023H8.23023H8.23024H8.23024H8.23024H8.23025H8.23025H8.23026H8.23026H8.23027H8.23027H8.23027H8.23028H8.23028H8.23029H8.23029H8.2303H8.2303H8.23031H8.23031H8.23032H8.23032H8.23032H8.23033H8.23033H8.23034H8.23034H8.23035H8.23036H8.23036H8.23037H8.23037H8.23038H8.23038H8.23039H8.23039H8.2304H8.2304H8.23041H8.23041H8.23042H8.23043H8.23043H8.23044H8.23044H8.23045H8.23046H8.23046H8.23047H8.23047H8.23048H8.23049H8.23049H8.2305H8.23051H8.23051H8.23052H8.23053H8.23053H8.23054H8.23055H8.23055H8.23056H8.23057H8.23057H8.23058H8.23059H8.2306H8.2306H8.23061H8.23062H8.23062H8.23063H8.23064H8.23065H8.23065H8.23066H8.23067H8.23068H8.23069H8.23069H8.2307H8.23071H8.23072H8.23073H8.23073H8.23074H8.23075H8.23076H8.23077H8.23078H8.23079H8.23079H8.2308H8.23081H8.23082H8.23083H8.23084H8.23085H8.23086H8.23087H8.23087H8.23088H8.23089H8.2309H8.23091H8.23092H8.23093H8.23094H8.23095H8.23096H8.23097H8.23098H8.23099H8.231H8.23101H8.23102H8.23103H8.23104H8.23105H8.23106H8.23107H8.23108H8.23109H8.23111H8.23112H8.23113H8.23114H8.23115H8.23116H8.23117H8.23118H8.23119H8.23121H8.23122H8.23123H8.23124H8.23125H8.23126H8.23128H8.23129H8.2313H8.23131H8.23132H8.23134H8.23135H8.23136H8.23137H8.23139H8.2314H8.23141H8.23142H8.23144H8.23145H8.23146H8.23148H8.23149H8.2315H8.23151H8.23153H8.23154H8.23155H8.23157H8.23158H8.2316H8.23161H8.23162H8.23164H8.23165H8.23167H8.23168H8.23169H8.23171H8.23172H8.23174H8.23175H8.23177H8.23178H8.2318H8.23181H8.23183H8.23184H8.23186H8.23187H8.23189H8.2319H8.23192H8.23193H8.23195H8.23197H8.23198H8.232H8.23201H8.23203H8.23205H8.23206H8.23208H8.23209H8.23211H8.23213H8.23214H8.23216H8.23218H8.23219H8.23221H8.23223H8.23225H8.23226H8.23228H8.2323H8.23232H8.23233H8.23235H8.23237H8.23239H8.2324H8.23242H8.23244H8.23246H8.23248H8.2325H8.23252H8.23253H8.23255H8.23257H8.23259H8.23261H8.23263H8.23265H8.23267H8.23269H8.23271H8.23273H8.23274H8.23276H8.23278H8.2328H8.23282H8.23284H8.23286H8.23289H8.23291H8.23293H8.23295H8.23297H8.23299H8.23301H8.23303H8.23305H8.23307H8.23309H8.23312H8.23314H8.23316H8.23318H8.2332H8.23322H8.23325H8.23327H8.23329H8.23331H8.23333H8.23336H8.23338H8.2334H8.23342H8.23345H8.23347H8.23349H8.23352H8.23354H8.23356H8.23359H8.23361H8.23363H8.23366H8.23368H8.23371H8.23373H8.23375H8.23378H8.2338H8.23383H8.23385H8.23388H8.2339H8.23393H8.23395H8.23398H8.234H8.23403H8.23405H8.23408H8.2341H8.23413H8.23416H8.23418H8.23421H8.23423H8.23426H8.23429H8.23431H8.23434H8.23437H8.23439H8.23442H8.23445H8.23448H8.2345H8.23453H8.23456H8.23459H8.23461H8.23464H8.23467H8.2347H8.23473H8.23475H8.23478H8.23481H8.23484H8.23487H8.2349H8.23493H8.23496H8.23498C8.71838 7.875 9.09839 7.48645 9.10984 7.01719Z"
+                      fill="white" stroke="white"></path>
+                    <path
+                      d="M4.22001 2.475V2.625C4.22001 2.90114 3.99616 3.125 3.72001 3.125H1.76501C1.48887 3.125 1.26501 2.90114 1.26501 2.625V2.475C1.26501 1.665 1.93001 1 2.74501 1C3.55501 1 4.22001 1.665 4.22001 2.475Z"
+                      fill="white"></path>
+                    <path
+                      d="M1.26501 8.955C1.26501 9.18 1.36001 9.525 1.48001 9.715L1.88501 10.395C2.36001 11.185 3.13001 11.185 3.60001 10.395L4.01002 9.715C4.12502 9.525 4.22001 9.18 4.22001 8.955V4.375C4.22001 4.09886 3.99616 3.875 3.72001 3.875H1.76501C1.48887 3.875 1.26501 4.09886 1.26501 4.375V8.955Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-purple-900 text-xs font-bold font-heading mb-1">Kickoff</p>
+                  <p class="text-gray-600 text-xs mb-3">10:00 PM − 11:00 PM (1h)</p>
+                  <!-- <div
+                      class="inline-block py-1 px-2 rounded-md bg-purple-50 border border-purple-200 text-purple-500 text-xs font-medium mb-4">
+                      Wellness</div> -->
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col flex-1">
+            <div class="border-t border-b border-gray-50 py-2 px-24">
+              <p class="text-center text-gray-500 text-sm font-semibold">Fri</p>
+            </div>
+            <div class="h-12"></div>
+            <a class="py-3 px-4 flex flex-wrap gap-3 border-b border-t border-r border-gray-50 hover:bg-gray-50 transition duration-200"
+              href="#">
+              <div class="bg-gray-400 w-5 h-5 flex items-center justify-center rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none">
+                  <path
+                    d="M8.35879 8.2051L8.35996 8.20616C8.77017 8.57643 8.9041 9.14137 8.70399 9.65877C8.50383 10.1713 8.02404 10.5 7.46999 10.5H4.52499C3.97517 10.5 3.49091 10.1706 3.29102 9.65885C3.09086 9.14143 3.22479 8.57645 3.63502 8.20616L3.63502 8.20616L3.63619 8.20509L5.51319 6.5H6.48179L8.35879 8.2051ZM5.08999 9.57H6.90999C7.37113 9.57 7.74999 9.19114 7.74999 8.73C7.74999 8.27365 7.3809 7.89 6.90999 7.89H5.08999C4.62885 7.89 4.24999 8.26886 4.24999 8.73C4.24999 9.18634 4.61907 9.57 5.08999 9.57Z"
+                    fill="white" stroke="white"></path>
+                  <path
+                    d="M9.17499 2.16C8.89999 1.455 8.22999 1 7.47499 1H4.52499C3.76999 1 3.09999 1.455 2.82499 2.16C2.55499 2.87 2.73999 3.655 3.30499 4.165L5.32499 6H6.67999L8.69999 4.165C9.25999 3.655 9.44499 2.87 9.17499 2.16ZM6.90999 3.615H5.08999C4.89999 3.615 4.74999 3.46 4.74999 3.275C4.74999 3.09 4.90499 2.935 5.08999 2.935H6.90999C7.09999 2.935 7.24999 3.09 7.24999 3.275C7.24999 3.46 7.09499 3.615 6.90999 3.615Z"
+                    fill="white"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-xs font-bold font-heading mb-1">Upcoming Events</p>
+                <p class="text-gray-500 text-xs mb-3">- : -- PM −:-- PM (1h)</p>
+                <div
+                  class="inline-block py-1 px-2 rounded-md bg-white border border-gray-100 text-gray-700 text-xs font-medium mb-4">
+                  Webinar</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="max-w-6xl mx-auto p-8 rounded-3xl border border-purple-500 flex items-center justify-between flex-wrap gap-4">
+      <div>
+        <h2 class="text-lg font-bold font-heading mb-2">How I join the events?</h2>
+        <p class="text-gray-600 max-w-2xl">By signing up you can join the upcoming events.</p>
+      </div>
+      <a class="w-full sm:w-auto text-center h-12 inline-flex items-center justify-center py-3 px-5 rounded-full bg-purple-500 border border-purple-600 shadow font-bold font-heading text-white hover:bg-purple-600 focus:ring focus:ring-purple-200 transition duration-200"
+        href="https://xdvqrto08wx.typeform.com/to/TdANIOlO">Sign up now</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-24 bg-purple-900" style="">
+  <div class="container mx-auto px-4">
+    <h1 class="text-center text-white text-4xl lg:text-5xl font-bold font-heading mb-4">AI Community Blog</h1>
+    <p class="text-center text-white text-lg mb-24 max-w-2xl mx-auto">Dive into the heart of AI innovation and
+      collaboration within our community. Explore articles, insights, and discussions that highlight the latest trends,
+      research, and projects in Artificial Intelligence. Join us to connect with experts and enthusiasts shaping the
+      future of AI.</p>
+
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full lg:w-1/3 p-4">
+        <a href="#">
+          <div
+            class="border border-dark-900 bg-white rounded-2xl h-full hover:border-orange-500 transition duration-200">
+            <div class="relative" style="height: 220px;">
+              <div class="absolute top-0 left-0 z-10">
+                <svg class="rounded-tl-2xl" xmlns="http://www.w3.org/2000/svg" width="154" height="154"
+                  viewbox="0 0 154 154" fill="none">
+                  <path
+                    d="M-35 79.9324V153.361C-35 153.714 -34.7141 154 -34.3615 154H16.62C16.9724 154 17.2585 153.714 17.2585 153.361V94.299C17.2585 55.5087 55.5087 17.2585 94.299 17.2585H153.361C153.714 17.2585 154 16.9724 154 16.62V-34.3615C154 -34.7139 153.714 -35 153.361 -35H79.9324C16.4572 -35 -35 16.4572 -35 79.9324Z"
+                    fill="#8010d4"></path>
+                </svg>
+              </div>
+              <div class="absolute bottom-0 right-0 z-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="152" height="153" viewbox="0 0 152 153" fill="none">
+                  <path
+                    d="M189 74.0676V0.638514C189 0.286054 188.714 0 188.361 0H137.38C137.028 0 136.742 0.286054 136.742 0.638514V59.701C136.742 98.4913 98.4914 136.742 59.701 136.742H0.638514C0.286054 136.742 0 137.028 0 137.38V188.361C0 188.714 0.286054 189 0.638514 189H74.0676C137.543 189 189 137.543 189 74.0676Z"
+                    fill="#8010d4"></path>
+                </svg>
+              </div>
+              <img class="absolute top-0 left-0 w-full h-full object-cover rounded-t-2xl" src="assets/datascience.jpeg"
+                alt="">
+            </div>
+            <div class="p-6">
+              <h2 class="font-bold font-heading mb-2">Data Science and the Workplace</h2>
+              <div class="flex items-center gap-2 flex-wrap mb-4">
+                <p class="text-gray-500 text-sm">----, 2024</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewbox="0 0 4 4" fill="none">
+                  <circle cx="2" cy="2" r="2" fill="#D1D1D1"></circle>
+                </svg>
+                <p class="text-gray-500 text-sm">7 min</p>
+              </div>
+              <div
+                class="inline-block rounded-md px-2 mx-2 py-1 border border-gray-100 text-gray-700 text-xs font-medium">
+                AI</div>
+              <div
+                class="inline-block rounded-md px-2 mx-2 py-1 border border-gray-100 text-gray-700 text-xs font-medium">
+                Data Analytics</div>
+              <div
+                class="inline-block rounded-md px-2 mx-2 py-1 border border-gray-100 text-gray-700 text-xs font-medium">
+                Data Engineering</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="relative py-20 md:py-24 overflow-hidden bg-gray-900">
+  <div class="relative container px-4 mx-auto">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-wrap -mx-4 items-center">
+        <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
+          <div class="relative z-10 max-w-lg mx-auto">
+            <h4 class="font-heading text-4xl sm:text-5xl lg:text-6xl text-white font-bold mb-12">Sign up for our
+              newsletter</h4>
+
+          </div>
+        </div>
+        <div class="w-full px-3  lg:w-1/2 lg:px-4 md:px-4">
+          <div class="relative md:pl-20 sm:pl-10 lg:pl-16 xl:pl-0 xs:pl-0 max-w-lg mx-auto">
+            <div class="md:flex mb-16">
+
+              <div class="max-w-xs">
+                <p class="text-lg font-semibold text-gray-400">Get the latest updates on AI research, news, events, and
+                  opportunities in Mauritania.</p>
+              </div>
+            </div>
+            <div class="sm:flex mb-2 items-center">
+              <input
+                class="w-full mb-3 sm:mb-0 sm:mr-4 py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg"
+                type="email" placeholder="your_email@example.com">
+              <button
+                class="relative group inline-block flex-shrink-0 w-full sm:w-auto py-3 px-5 text-sm font-semibold text-orange-50 hover:text-purple-900 bg-purple-900 rounded-md overflow-hidden transition duration-300"
+                type="submit">
+                <div
+                  class="absolute top-0 right-full w-full h-full bg-white transform group-hover:translate-x-full group-hover:scale-102 transition duration-500">
+                </div>
+                <div class="relative flex items-center justify-center">
+                  <span class="mr-4">Subscribe Now</span>
+                  <svg width="8" height="11" viewbox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.82994 5.04001L2.58994 0.80001C2.49698 0.706281 2.38638 0.631887 2.26452 0.581118C2.14266 0.530349 2.01195 0.504211 1.87994 0.504211C1.74793 0.504211 1.61723 0.530349 1.49537 0.581118C1.37351 0.631887 1.26291 0.706281 1.16994 0.80001C0.983692 0.987372 0.87915 1.24082 0.87915 1.50501C0.87915 1.7692 0.983692 2.02265 1.16994 2.21001L4.70994 5.75001L1.16994 9.29001C0.983692 9.47737 0.87915 9.73082 0.87915 9.99501C0.87915 10.2592 0.983692 10.5126 1.16994 10.7C1.26338 10.7927 1.3742 10.866 1.49604 10.9158C1.61787 10.9655 1.74834 10.9908 1.87994 10.99C2.01155 10.9908 2.14201 10.9655 2.26385 10.9158C2.38569 10.866 2.4965 10.7927 2.58994 10.7L6.82994 6.46001C6.92367 6.36705 6.99806 6.25645 7.04883 6.13459C7.0996 6.01273 7.12574 5.88202 7.12574 5.75001C7.12574 5.618 7.0996 5.48729 7.04883 5.36543C6.99806 5.24357 6.92367 5.13297 6.82994 5.04001Z"
+                      fill="currentColor"></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
