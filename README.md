@@ -41,28 +41,26 @@ Rimai.com is the official website for the Mauritanian AI community. This project
 
 
 Install dependencies:
-> npm install
+``` npm install
 
 
 To start the development server:
-> npm start
+``` npm start
 
 To build the application for production:
-> npm build 
+``` npm build 
 
 
 Deployment Using Docker
 
 Build the Docker image:
-> docker build -t rimai-com .
+``` docker build -t rimai-com .
 
 
 Run the container:
-> docker run -d -p 80:80 rimai-com
-The application will be accessible at http://localhost.
+``` docker run -d -p 80:80 rimai-com
+
+The application will be accessible at http://localhost:4200 or http://localhost
 
 Contributions
 Contributions are welcome! If you would like to suggest improvements or report bugs, please open an issue or submit a pull request.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
