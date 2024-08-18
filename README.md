@@ -24,10 +24,6 @@ Rimai.com is the official website for the Mauritanian AI community. This project
 
 ## Prerequisites
 
-
-
-
-
 - [Node.js](https://nodejs.org/)
 - [Angular CLI](https://angular.io/cli)
 - [Docker](https://www.docker.com/)
@@ -36,31 +32,40 @@ Rimai.com is the official website for the Mauritanian AI community. This project
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/rimai.com.git
-   cd rimai
+   git clone https://github.com/rim-ai/website.git
+   cd website
 
+## Install dependencies:
 
-Install dependencies:
-``` npm install
+    ```
+    npm install
 
 
 To start the development server:
-``` npm start
+
+    ```
+    npm start
 
 To build the application for production:
-``` npm build 
+
+    npm build 
 
 
-Deployment Using Docker
+## Deployment Using Docker
 
 Build the Docker image:
-``` docker build -t rimai-com .
+
+    ```
+    docker build -t rimai-com .
 
 
 Run the container:
-``` docker run -d -p 80:80 rimai-com
 
-The application will be accessible at http://localhost:4200 or http://localhost
+    ```
+    docker run -d -p 80:80 rimai-com
 
-Contributions
+The application will be accessible at http://localhost.
+
+## Contributions
 Contributions are welcome! If you would like to suggest improvements or report bugs, please open an issue or submit a pull request.
+
